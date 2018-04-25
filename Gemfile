@@ -16,10 +16,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'sdoc'
-gem 'pg'
+gem 'pg', '~> 0.21.0'
+
 
 group :development, :test do
- 
+
   gem 'byebug'
   gem 'web-console'
   gem 'spring'
@@ -32,7 +33,7 @@ group :test do
 end
 
 group :production do
-  
+  gem 'pg', '~> 0.21.0'
   gem 'rails_12factor'
   gem 'puma'
 end
